@@ -1,4 +1,4 @@
 variable "image_in" {
-  type = string
+  type        = string
   description = "name of image"
 }

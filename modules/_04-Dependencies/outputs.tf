@@ -8,3 +8,6 @@ output "ip-address" {
   value       = flatten(module.container[*].ip-address)
   description = "The IP address and external port of the container"
 }
+output "image_out" {
+  value = module.image.image_out
+}
