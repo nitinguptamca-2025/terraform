@@ -4,7 +4,16 @@ output "container-name" {
   description = "The name of the container"
 }
 
+# output "ip-address" {
+#   value       = [for i in docker_container.nodered_container[*] : join(":", [i.ip_address], i.ports[*]["external"])]
+#   description = "The IP address and external port of the container"
+# }
+
 output "ip-address" {
-  value       = [for i in docker_container.nodered_container[*] : join(":", [i.ip_address], i.ports[*]["external"])]
+  value = flatten([
+    for i in docker_container.nodered_container[*] : [
+      for port in i.ports : "${i.network_data[0].ip_address}:${port.external}"
+    ]
+  ])
   description = "The IP address and external port of the container"
 }
