@@ -10,12 +10,7 @@ variable "image" {
 
 
 variable "ext_port" {
-  type = map(list(string)) # or map(tuple(...))
-  default = {
-    dev     = ["8080", "8081"]
-    prod    = ["9090", "9091"]
-    staging = ["9001", "9002"]
-  }
+  type = map(any)
 
   validation {
     condition     = max(var.ext_port["dev"]...) <= 65535 && min(var.ext_port["dev"]...) >= 1980
@@ -27,7 +22,7 @@ variable "ext_port" {
     error_message = "The external port must be in the valid port range 0 - 65535."
   }
   validation {
-    condition     = max(var.ext_port["staging"]...) <= 65535 && min(var.ext_port["staging"]...) >= 1880
+    condition     = max(var.ext_port["staging"]...) < 9999 && min(var.ext_port["staging"]...) >= 8000
     error_message = "The external port must be in the valid port range 0 - 65535."
   }
 }
