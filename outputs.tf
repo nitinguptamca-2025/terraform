@@ -1,5 +1,5 @@
 output "container-name" {
-  value       = module._01-first-Module-Image.container-name
+  value = module._01-first-Module-Image.container-name
 }
 
 output "ip-address" {
@@ -7,5 +7,5 @@ output "ip-address" {
 }
 
 output "image_out" {
- value = module._01-first-Module-Image.image_out
+  value = module._01-first-Module-Image.image_out
 }

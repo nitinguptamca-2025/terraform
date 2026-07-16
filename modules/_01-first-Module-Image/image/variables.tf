@@ -1,4 +1,4 @@
 variable "image_in" {
-  default = "nitinguptamca"
+  type = string
   description = "name of image"
 }
