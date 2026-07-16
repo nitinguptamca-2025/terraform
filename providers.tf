@@ -1,0 +1,19 @@
+terraform {
+  required_version = ">= 1.5.0"
+
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0.2"
+    }
+  }
+}
+
+provider "docker" {
+    host = var.docker_host
+  registry_auth {
+    address  = "registry.hub.docker.com"
+    username = "nitinguptamca"
+    password = "Gurukul700@#"
+  }
+}
