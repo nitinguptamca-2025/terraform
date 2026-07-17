@@ -10,6 +10,7 @@ terraform {
 }
 
 provider "docker" {
+  host = "unix:///var/run/docker.sock"
   registry_auth {
     address  = "registry.hub.docker.com"
     username = "nitinguptamca"

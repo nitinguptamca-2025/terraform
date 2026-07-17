@@ -1,79 +1,36 @@
-output "container-name" {
+output "first_container-name" {
   value = module._01-first-Module-Image.container-name
 }
-
-output "ip-address" {
+output "first_ip-address" {
   value = module._01-first-Module-Image.ip-address
 }
-
-output "image_out" {
+output "first_image_out" {
   value = module._01-first-Module-Image.image_out
 }
-
-output "container-name" {
+output "second_container-name" {
   value = module._02-Module-Variables.container-name
 }
-
-output "ip-address" {
+output "second_ip-address" {
   value = module._02-Module-Variables.ip-address
 }
-output "image_out" {
+output "second_image_out" {
   value = module._02-Module-Variables.image_out
 }
-
-
-output "container-name" {
+output "third_container-name" {
   value = module._03-Terraform-Graph.container-name
 }
-
-output "ip-address" {
+output "third_ip-address" {
   value = module._03-Terraform-Graph.ip-address
 }
-output "image_out" {
+output "third_image_out" {
   value = module._03-Terraform-Graph.image_out
 }
-
-output "container-name" {
-  value = module._01-first-Module-Image.container-name
-}
-
-output "ip-address" {
-  value = module._01-first-Module-Image.ip-address
-}
-
-output "image_out" {
-  value = module._01-first-Module-Image.image_out
-}
-
-output "container-name" {
-  value = module._02-Module-Variables.container-name
-}
-
-output "ip-address" {
-  value = module._02-Module-Variables.ip-address
-}
-output "image_out" {
-  value = module._02-Module-Variables.image_out
-}
-
-
-output "container-name" {
-  value = module._03-Terraform-Graph.container-name
-}
-
-output "ip-address" {
-  value = module._03-Terraform-Graph.ip-address
-}
-output "image_out" {
-  value = module._03-Terraform-Graph.image_out
-}
-
-output "container-name" {
+output "fourth_container-name" {
   value = module._04-Dependencies.container-name
 }
-output "ip-address" {
+output "fourth_ip-address" {
   value = module._04-Dependencies.ip-address
 }
-output "image_out" {
+output "fourth_image_out" {
   value = module._04-Dependencies.image_out
 }
