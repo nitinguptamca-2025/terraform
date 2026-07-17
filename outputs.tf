@@ -34,3 +34,10 @@ output "fourth_ip-address" {
 output "fourth_image_out" {
   value = module._04-Dependencies.image_out
 }
+
+output "six_container-name" {
+  value = module._06-Container-Module-Outputs.name
+}
+output "six_ip_address" {
+  value = module._06-Container-Module-Outputs.ip-address
+}
