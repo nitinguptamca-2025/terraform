@@ -1,3 +1,7 @@
+
+##output
+
+
 output "image_out" {
-  value = docker_image.nodered_image.latest
+  value = docker_image.nodered_image.image_id
 }

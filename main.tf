@@ -47,3 +47,11 @@ module "_08-Docker-Volume" {
     prod = [1890, 1891]
   }
 }
+
+module "_08-Lifecycle-Policies" {
+  source = "./modules/_08-Lifecycle-Policies"
+  ext_port = {
+    dev  = [1992, 1992]
+    prod = [1892, 1893]
+  }
+}
