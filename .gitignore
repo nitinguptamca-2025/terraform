@@ -1,5 +1,7 @@
 # Local .terraform directories
 **.terraform/
+**noderedvol/
+*terraform_graph
 
 # .tfstate files
 *.tfstate
