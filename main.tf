@@ -31,3 +31,19 @@ module "_04-Dependencies" {
     prod = [1886, 1887]
   }
 }
+
+module "_06-Container-Module-Outputs" {
+  source = "./modules/_06-Container-Module-Outputs"
+  ext_port = {
+    dev  = [1988, 1989]
+    prod = [1888, 1889]
+  }
+}
+
+module "_08-Docker-Volume" {
+  source = "./modules/_08-Docker-Volume"
+  ext_port = {
+    dev  = [1990, 1991]
+    prod = [1890, 1891]
+  }
+}
