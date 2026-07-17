@@ -41,3 +41,11 @@ output "six_container-name" {
 output "six_ip_address" {
   value = module._06-Container-Module-Outputs.ip-address
 }
+
+# output "eight_container-name" {
+#   value = module._08-Docker-Volume.name
+# }
+# output "eight_ip_address" {
+#   value = module._08-Docker-Volume.ip-address
+# }
+
