@@ -12,7 +12,6 @@ terraform {
 provider "docker" {
   registry_auth {
     address  = "registry.hub.docker.com"
-    username = "nitinguptamca"
-    password = "Gurukul700@#"
+
   }
 }
